@@ -1,0 +1,54 @@
+<ion-tabs>
+    <div class="playing-bar" (click)="openNowPlaying()">
+        <ion-progress-bar value="0.25"></ion-progress-bar>
+
+        <ion-row class="grid-no-padding ion-align-items-center">
+            <ion-col size="auto">
+                <ion-thumbnail>
+                    <img src="assets/img/losientobb.png" alt="">
+                </ion-thumbnail>
+            </ion-col>
+
+            <ion-col>
+                <div class="playing-info">
+                    <div class="song-info">
+                        <span>Lo siento BB:/ (with Bad Bunny & Julieta)</span>
+                        <span> · </span>
+                        <span><ion-text color="medium">Tainy, Bad Bunny, Julieta Venegas</ion-text></span>
+                    </div>
+
+                </div>
+            </ion-col>
+
+            <ion-col size="auto">
+                <ion-button fill="clear" color="medium" size="small">
+                    <ion-icon slot="icon-only" name="play-sharp"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </div>
+
+    <ion-tab-bar slot="bottom" color="light">
+        <ion-tab-button tab="tab1">
+            <ion-icon name="home-outline"></ion-icon>
+            <ion-label>Inicio</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="tab2">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-label>Buscar</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="tab3">
+            <ion-icon name="list-outline"></ion-icon>
+            <ion-label>Tu biblioteca</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="tab4">
+            <ion-icon name="card-outline"></ion-icon>
+            <ion-label>Premium</ion-label>
+        </ion-tab-button>
+
+
+    </ion-tab-bar>
+
+</ion-tabs>

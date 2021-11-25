@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar color="light">
+        <ion-buttons slot="start">
+            <ion-button color="medium" (click)="closeModal()">
+                <ion-icon slot="icon-only" name="chevron-down"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+
+        <ion-title>
+
+            <marquee>
+                <div class="title-bad">Lo siento BB:/ (with Bad Bunny & Julieta Venegas)</div>
+            </marquee>
+        </ion-title>
+
+
+        <ion-buttons slot="end">
+            <ion-button color="medium">
+                <ion-icon slot="icon-only" name="ellipsis-horizontal"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-gradient">
+    <div class="album-cover">
+        <ion-thumbnail>
+            <img src="{{'assets/img/losientobb.png'}}" style="width:100%;height:auto;">
+        </ion-thumbnail>
+    </div>
+    <div class="informacion">
+        <div class="song-info ion-padding">
+            <div class="song-title">
+                Lo siento BB:/ (with Bad Bunny & Julieta Venegas)
+            </div>
+            <div class="artist-name">
+                <ion-text color="medium">Tainy, Bad Bunny, Julieta Venegas</ion-text>
+            </div>
+        </div>
+
+        <div class="song-timeline ion-padding">
+            <ion-progress-bar value="0.25"></ion-progress-bar>
+            <ion-row class="grid-no-padding ion-justify-content-between">
+                <ion-col size="auto">
+                    0:53
+                </ion-col>
+                <ion-col size="auto">
+                    -4:18
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div class="buttons ion-padding">
+            <ion-button color="dark" fill="clear" size="small">
+                <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+            </ion-button>
+            <ion-button color="dark" fill="clear" size="small">
+                <ion-icon slot="icon-only" name="play-skip-back-sharp"></ion-icon>
+            </ion-button>
+            <ion-button fill="clear" mode="ios" *ngIf="!isPlaying" (click)="play()">
+                <ion-icon name="play" style="font-size: 40px;"></ion-icon>
+            </ion-button>
+
+            <ion-button color="dark" fill="clear" size="small">
+                <ion-icon slot="icon-only" name="play-skip-forward-sharp"></ion-icon>
+            </ion-button>
+            <ion-button color="dark" fill="clear" size="small">
+                <ion-icon slot="icon-only" name="repeat-outline"></ion-icon>
+            </ion-button>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button color="medium">
+                <ion-icon slot="icon-only" name="desktop-outline" size="small"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-icon slot="icon-only" name="share-outline" size="small"></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-footer>

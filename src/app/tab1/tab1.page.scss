@@ -1,0 +1,100 @@
+ion-header ion-toolbar {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 14px 20px 20px;
+}
+
+.hydrated {
+    --background: linear-gradient(75deg, rgba(63, 63, 63, 1)0%, rgba(63, 63, 63, 1) 13.5%, rgba(29, 29, 29, 1) 33.33%, rgba(0, 0, 0, 1) 100%) !important;
+}
+
+.collection {
+    overflow-y: hidden;
+    margin-bottom: 16px;
+    .scroll-vertical {
+        overflow: scroll;
+        display: inline-block;
+    }
+    .scroll-horizontal {
+        padding: 0 10px;
+        overflow: scroll;
+        display: flex;
+    }
+    .scroll-horizontal-one {
+        padding-left: 14px;
+    }
+    .collection-title {
+        font-size: 22px;
+        font-weight: 700;
+        padding: 8px 16px 16px;
+        overflow: hidden;
+        display: inline-block;
+    }
+    .horizontal {
+        font-size: 22px;
+        font-weight: 700;
+        padding: 20px 16px 8px;
+        overflow: hidden;
+        display: inline-block;
+        width: 35%;
+    }
+    .icon-inner {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    .media-card {
+        background-color: var(--ion-color-light);
+        border-radius: 4px;
+        overflow: hidden;
+        font-size: 13px;
+        width: 180px;
+        height: 48px;
+    }
+    .scroll-item {
+        padding-bottom: 10px;
+        padding-right: 10px;
+        &.size-sm {
+            width: 120px;
+            margin-right: 15px;
+        }
+        &.size-md {
+            width: 150px;
+            margin-right: 17px;
+        }
+    }
+    .card-thumbnail {
+        &.size-auto {
+            height: 150px;
+            width: 150px;
+        }
+    }
+    .item-title {
+        padding: 8px 0;
+        font-size: 13px;
+        white-space: break-spaces;
+    }
+    .item-titl {
+        padding: 8px;
+        font-size: 13px;
+        text-align: center;
+        white-space: break-spaces;
+    }
+    .imgRedonda {
+        width: 140px;
+        height: 140px;
+        border-radius: 150px;
+    }
+    .collection-title {
+        font-size: 22px;
+        font-weight: 700;
+        width: 100%;
+    }
+    .collection-titl {
+        font-size: 22px;
+        font-weight: 700;
+        width: 65%;
+        padding: 20px 16px 8px;
+        overflow: hidden;
+        display: inline-block;
+    }
+}

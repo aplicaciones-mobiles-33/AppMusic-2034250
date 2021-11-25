@@ -1,0 +1,66 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-title size="large"> Buscar
+        </ion-title>
+    </ion-toolbar>
+    <ion-toolbar>
+        <ion-searchbar placeholder="Artistas, canciones o podcast"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item lines="none">
+        <ion-label><strong>Explorar</strong></ion-label>
+    </ion-item>
+
+    <div class="category-list">
+        <div class="category-item" routerLink="playlist">
+            <div class="title">
+                Latina
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_1.png)'"></div>
+        </div>
+        <div class="category-item color-2">
+            <div class="title">
+                Hip Hop
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_2.png)'"></div>
+        </div>
+        <div class="category-item color-3">
+            <div class="title">
+                Radio
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_3.png)'"></div>
+        </div>
+        <div class="category-item color-4">
+            <div class="title">
+                Descubrir
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_4.png)'"></div>
+        </div>
+        <div class="category-item">
+            <div class="title">
+                Conciertos
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_1.png)'"></div>
+        </div>
+        <div class="category-item color-2">
+            <div class="title">
+                Fiesta
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_2.png)'"></div>
+        </div>
+        <div class="category-item color-3">
+            <div class="title">
+                Cumbia
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_3.png)'"></div>
+        </div>
+        <div class="category-item color-4">
+            <div class="title">
+                Pop
+            </div>
+            <div class="card-thumbnail" [style.backgroundImage]="'url(assets/img/img_4.png)'"></div>
+        </div>
+    </div>
+</ion-content>
